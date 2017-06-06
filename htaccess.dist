@@ -1,0 +1,23 @@
+Options -Includes -Indexes +SymLinksIfOwnerMatch
+
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+
+# Secure certain restricted files in WordPress
+#   readme.html
+#   wp-config.php
+#   wp-admin/install.php
+RewriteRule ^/wp-config\. - [F]
+RewriteCond %{REMOTE_HOST} !\.(illinois|uillinois|uiuc)\.edu$
+RewriteRule ^/(htaccess\.dist|readme\.html|wp-admin/install\.php) - [F]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+# Blocked because of system.multicall
+<Files xmlrpc.php>
+        Order deny,allow
+        Deny from all
+</Files>
