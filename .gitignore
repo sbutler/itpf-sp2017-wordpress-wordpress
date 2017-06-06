@@ -1,0 +1,6 @@
+# Files that live on EFS and shouldn't be included in any package
+.htaccess
+wp-content/blogs.dir
+wp-content/cache
+wp-content/uploads
+wp-content/w3tc-config
