@@ -1,4 +1,6 @@
 <?php
+/* Keep here for .ebextensions/00init.config */
+define('WP_CACHE', false);
 
 if (!empty($_SERVER['WP_HOME']) && ($_SERVER['WP_HOME'] != 'changeme'))
     define('WP_HOME', $_SERVER['WP_HOME']);
