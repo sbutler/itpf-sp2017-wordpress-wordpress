@@ -26,7 +26,7 @@ inherant to the application, or if it might change based on the Elastic
 Beanstalk environment configuration. You should try to keep your applications
 as generic as possible with respect to the environment they are deployed in.
 
-## htaccess File
+## htaccess
 
 Some WordPress plugins want to write to the `htaccess` file, and this is a problem
 with how Elastic Beanstalk works. To solve this, the `htaccess` file is not
