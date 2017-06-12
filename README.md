@@ -9,6 +9,29 @@ use it as a base for your own application package.
 To build a new package run `make eb-appver` and it will place a new zip file in
 the parent directory.
 
+## Environment Variables
+
+The following Elastic Beanstalk environment variables are used by this
+application package.
+
+| Variable              | WP Define         | Description
+| --------------------- | ----------------- | -----------
+| WP_HOME               | WP_HOME           | Home page URL. Used if not the values `changeme` or blank.
+| WP_SITEURL            | WP_SITEURL        | Site URL for WP core files. Used if not the values `changeme` or blank.
+| WP_DB_NAME            | DB_NAME           | Database name.
+| WP_DB_USER            | DB_USER           | Database user. Do not use the admin user.
+| WP_DB_PASSWORD        | DB_PASSWORD       | Database password.
+| WP_DB_HOSTNAME        | DB_HOST           | Database hostname.
+| WP_AUTH_KEY           | AUTH_KEY          | Cryptographically secure random value.
+| WP_SECURE_AUTH_KEY    | SECURE_AUTH_KEY   | Cryptographically secure random value.
+| WP_LOGGED_IN_KEY      | LOGGED_IN_KEY     | Cryptographically secure random value.
+| WP_NONCE_KEY          | NONCE_KEY         | Cryptographically secure random value.
+| WP_AUTH_SALT          | AUTH_SALT         | Cryptographically secure random value.
+| WP_SECURE_AUTH_SALT   | SECURE_AUTH_SALT  | Cryptographically secure random value.
+| WP_LOGGED_IN_SALT     | LOGGED_IN_SALT    | Cryptographically secure random value.
+| WP_NONCE_SALT         | NONCE_SALT        | Cryptographically secure random value.
+| EFS_WPCONTENT_ID      |                   | EFS ID to mount under `/mnt/wpcontent`.
+
 ## Email
 
 To send email from WordPress, configure the WP Mail SMTP plugin. The Elastic
