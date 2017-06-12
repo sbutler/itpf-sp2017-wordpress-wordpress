@@ -1,9 +1,11 @@
-  Copyright (c) 2017 University of Illinois Board of Trustees
-  All rights reserved.
+Copyright (c) 2017 University of Illinois Board of Trustees. All rights
+reserved.
 
-  Developed by:         Technology Services
+```
+Developed by:           Technology Services
                         University of Illinois at Urbana-Champaign
                         https://techservices.illinois.edu/
+```
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal with
