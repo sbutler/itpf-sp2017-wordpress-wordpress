@@ -1,7 +1,7 @@
-Copyright (c) 2017 University of Illinois Board of Trustees. All rights
-reserved.
-
 ```
+Copyright (c) 2017 University of Illinois Board of Trustees.
+All rights reserved.
+
 Developed by:           Technology Services
                         University of Illinois at Urbana-Champaign
                         https://techservices.illinois.edu/
