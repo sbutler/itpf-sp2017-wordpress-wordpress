@@ -45,7 +45,7 @@ Elastic Beanstalk environment. All automatic updates and file editing is
 disabled.
 
 If you need to modify the `wp-config.php` file, ask yourself if the setting is
-inherant to the application, or if it might change based on the Elastic
+inherent to the application, or if it might change based on the Elastic
 Beanstalk environment configuration. You should try to keep your applications
 as generic as possible with respect to the environment they are deployed in.
 
